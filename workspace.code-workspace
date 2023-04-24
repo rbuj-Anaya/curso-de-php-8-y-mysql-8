@@ -8,7 +8,8 @@
 		}
 	],
 	"settings": {
-		"git.ignoreLimitWarning": true
+		"git.ignoreLimitWarning": true,
+		"cSpell.language": "en,es"
 	},
 	"launch": {
 		"version": "0.2.0",
