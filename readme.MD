@@ -1,5 +1,8 @@
 # Curso de PHP 8 y MySQL 8
-![Imagen provisional del libro](https://raw.githubusercontent.com/Anaya-Multimedia/curso-de-php-8-y-mysql-8/master/images/libro.png "Curso de PHP 8 y MySQL 8")
+<p align="center">
+<img src="images/libro.png" alt="Curso de PHP 8 y MySQL 8" width="500px">
+</p>
+
 ## Introducción
 En este repositorio encontrarás todos los ejemplos del libro “Curso de PHP 8 y MySQL 8” de _Anaya Multimedia_. Sigue los pasos de instalación de los contenedores para poder tener un Sistema completo con PHP 8, MySQL 8 y Nginx.
 ## Instalación
@@ -23,8 +26,11 @@ Cada línea indica que es un contenedor distinto:
 - curso-de-php-8-y-mysql-8_nginx_1. Contiene el Servidor de aplicaciones Nginx que va a tramitar las peticiones de PHP.
 - curso-de-php-8-y-mysql-8_php_1. Contiene la compilación de PHP 8 funcionando como componente ([FastCGI Process Manager](https://www.php.net/manual/es/install.fpm.php "FastCGI Process Manager")) de Nginx.
 Si el estado (_State_) del contenedor es _UP_ quiere decir que todo está funcionando. El servidor web Nginx se levanta en el puerto 8000 y debería responder desde cualquier navegador con la URL [http://localhost:8000](http://localhost:8000 "http://localhost:8000"). 
-Además, es posible comprobar que PHP 8 está funcionando accediendo a la URL [http://localhost:8000/info.php](http://localhost:8000/info.php "http://localhost:8000/info.php"). 
-![Captura de pantalla de phpinfo()](https://raw.githubusercontent.com/Anaya-Multimedia/curso-de-php-8-y-mysql-8/master/images/info.png)
+Además, es posible comprobar que PHP 8 está funcionando accediendo a la URL [http://localhost:8000/info.php](http://localhost:8000/info.php "http://localhost:8000/info.php").
+<p align="center">
+<img src="images/info.png" alt="Captura de pantalla de phpinfo()"/>
+</p>
+
 ## Conexión con los contenedores
 ### PHP 8
 Una vez que los contenedores están funcionando se puede interactuar con ellos con los [comandos básicos de Docker](https://cerebro-digital.com/panel/knowledgebase/63/Comandos-frecuentes-de-Docker.html "comandos básicos de Docker"). Para conectar con el contenedor de PHP 8 tendremos que poner en el terminal el siguiente comando:  
