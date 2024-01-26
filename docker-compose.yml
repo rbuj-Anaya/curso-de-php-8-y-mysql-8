@@ -19,7 +19,7 @@ services:
                 client_host=host.docker.internal 
                 client_port=9001
     nginx:
-        image: nginx:1.13.8
+        image: nginx:1.25
         ports:
             - 8000:80
             - 8001:81

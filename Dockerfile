@@ -1,5 +1,5 @@
 # Dockerfile
-FROM php:8.0.0-fpm-alpine3.12
+FROM php:8.3.2-fpm-alpine3.19
 
 ENV MUSL_LOCALE_DEPS cmake make musl-dev gcc gettext-dev libintl 
 ENV MUSL_LOCPATH /usr/share/i18n/locales/musl
