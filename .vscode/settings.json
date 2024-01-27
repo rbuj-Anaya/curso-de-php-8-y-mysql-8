@@ -2,5 +2,6 @@
   "editor.formatOnSave": false,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.detectIndentation": false
+  "editor.detectIndentation": false,
+  "cSpell.language": "en,es"
 }
