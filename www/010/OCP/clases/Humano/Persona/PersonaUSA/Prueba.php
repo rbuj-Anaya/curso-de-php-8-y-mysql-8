@@ -2,13 +2,16 @@
 
 namespace clases\Humano\Persona\PersonaUSA;
 
-class Prueba {
+class Prueba
+{
 
-    function __construct(string $nombre) {
-        $this->nombre = $nombre;
-    } 
+  function __construct(string $nombre)
+  {
+    $this->nombre = $nombre;
+  }
 
-    public function diHola() {
-        echo "Hola $this->nombre";
-    }
+  public function diHola()
+  {
+    echo "Hola $this->nombre";
+  }
 }

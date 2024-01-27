@@ -1,8 +1,9 @@
 <?php
-function recorre($numeros) {
-    foreach($numeros as $indice => $valor) {
-        echo "$indice :: $valor <br/>";
-    }
+function recorre($numeros)
+{
+  foreach ($numeros as $indice => $valor) {
+    echo "$indice :: $valor <br/>";
+  }
 }
 
 $numeros = array("cinco" => 5, "uno" => 1, "tres" => 3, "cinco" => 5, "dos" => 2);

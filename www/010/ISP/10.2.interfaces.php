@@ -1,15 +1,24 @@
 <?php
-interface Fotografiar {}
+interface Fotografiar
+{
+}
 
-interface dobleSim {}
+interface dobleSim
+{
+}
 
-interface escribirEnTeclado {}
+interface escribirEnTeclado
+{
+}
 
-interface escribirEnPantalla {}
+interface escribirEnPantalla
+{
+}
 
-interface wifi {}
+interface wifi
+{
+}
 
-
-class iPhone implements Fotografiar, escribirEnPantalla, wifi {
-
+class iPhone implements Fotografiar, escribirEnPantalla, wifi
+{
 }

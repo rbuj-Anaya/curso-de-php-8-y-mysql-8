@@ -1,5 +1,6 @@
 <?php
-function capitales($pais, $capital = "Madrid", $habitantes = "muchos") {
+function capitales($pais, $capital = "Madrid", $habitantes = "muchos")
+{
   return ("La capital de $pais es $capital y tiene $habitantes habitantes.<br/>");
 }
 echo capitales("España");

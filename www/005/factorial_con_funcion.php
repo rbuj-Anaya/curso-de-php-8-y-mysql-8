@@ -1,5 +1,6 @@
 <?php
-function factorial($numero) {
+function factorial($numero)
+{
   $resultado = 1;
   for ($x = $numero; $x > 0; $x--) {
     $resultado = $resultado * $x;

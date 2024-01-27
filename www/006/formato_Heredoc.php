@@ -1,4 +1,4 @@
-<h1>Gustavo Adolfo Bécquer</h1> 
+<h1>Gustavo Adolfo Bécquer</h1>
 <?php
 
 $autor = "Gustavo Adolfo Bécquer";

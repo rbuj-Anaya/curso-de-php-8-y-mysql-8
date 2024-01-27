@@ -14,7 +14,7 @@ echo 1.5 <=> 2.5; // -1
 echo "<br/>";
 echo 2.5 <=> 1.5; // 1
 echo "<br/>";
- 
+
 // Cadenas
 echo "a" <=> "a"; // 0
 echo "<br/>";

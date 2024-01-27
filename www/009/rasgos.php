@@ -1,29 +1,39 @@
 <?php
-trait UtilFecha {
-    private $fecha;
-    public function setFecha() {
-        $this->fecha = new DateTime();
-    }
+trait UtilFecha
+{
+  private $fecha;
 
-    public function getFecha() {
-        return $this->fecha->format("d/m/Y");
-    }
-}
+  public function setFecha()
+  {
+    $this->fecha = new DateTime();
+  }
 
-trait UtilImpuesto {
-  private $iva;  
-  public function getIva() {
-        return 0.21;
+  public function getFecha()
+  {
+    return $this->fecha->format("d/m/Y");
   }
 }
 
-class Factura{
+trait UtilImpuesto
+{
+  private $iva;
+
+  public function getIva()
+  {
+    return 0.21;
+  }
+}
+
+class Factura
+{
   use UtilFecha, UtilImpuesto;
-  function __construct(){
+
+  function __construct()
+  {
     $this->setFecha();
-  } 
+  }
 }
 
 $factura = new Factura();
-echo $factura->getFecha()."<br/>";
+echo $factura->getFecha() . "<br/>";
 echo $factura->getIva();

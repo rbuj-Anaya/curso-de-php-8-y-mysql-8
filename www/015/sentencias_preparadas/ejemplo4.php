@@ -1,6 +1,6 @@
 <?php
 require_once  "../config.php";
-$conexionPDO = new PDO("mysql:host=".SERVIDOR.";dbname=".BASE_DATOS.";charset=utf8", USUARIO, PASS);
+$conexionPDO = new PDO("mysql:host=" . SERVIDOR . ";dbname=" . BASE_DATOS . ";charset=utf8", USUARIO, PASS);
 try {
   $conexionPDO->beginTransaction();
   $consulta = "UPDATE contactos SET familia = 0 WHERE id = :id";
@@ -13,7 +13,7 @@ try {
   $sentencia->execute();
   $conexionPDO->commit();
   echo "Filas actualizadas";
-} catch ( PDOException $e ) {
+} catch (PDOException $e) {
   $conexionPDO->rollBack();
   echo "Hubo algún error en la transacción " . $e->getMessage();
 }

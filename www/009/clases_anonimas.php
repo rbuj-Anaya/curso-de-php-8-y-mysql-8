@@ -1,21 +1,30 @@
 <?php
-interface Datos{
+interface Datos
+{
   public function detalle(string $nombre);
 }
-class Empresa {
+
+class Empresa
+{
   private $razonSocial;
 
-  public function getRazonSocial(){
+  public function getRazonSocial()
+  {
     return $this->razonSocial;
   }
 
-  public function setRazonSocial(Datos $razonSocial){
+  public function setRazonSocial(Datos $razonSocial)
+  {
     $this->razonSocial = $razonSocial;
   }
 }
+
 $empresa = new Empresa;
-$empresa->setRazonSocial( new class implements Datos {
-    public function detalle(string $nombre){
+$empresa->setRazonSocial(
+  new class implements Datos
+  {
+    public function detalle(string $nombre)
+    {
       echo $nombre;
     }
   }

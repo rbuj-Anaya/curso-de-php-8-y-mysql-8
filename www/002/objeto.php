@@ -1,21 +1,27 @@
 <?php
 
-class Tomate {
-    private $tipo;
-    function __construct($tipo) {
-        $this->tipo = $tipo;
-    }
+class Tomate
+{
+  private $tipo;
+  function __construct($tipo)
+  {
+    $this->tipo = $tipo;
+  }
 }
 
-class Lechuga {}
+class Lechuga
+{
+}
 
-class Receta {
+class Receta
+{
 
-    private $ingredientes;
- 
-    public function incluir(object $ingrediente){
-        $this->ingredientes[] = $ingrediente;
-    }
+  private $ingredientes;
+
+  public function incluir(object $ingrediente)
+  {
+    $this->ingredientes[] = $ingrediente;
+  }
 }
 
 $tomatePera = new Tomate('Pera');

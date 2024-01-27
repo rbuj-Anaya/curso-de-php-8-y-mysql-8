@@ -1,7 +1,10 @@
 <?php
-class Persona {
+class Persona
+{
   public $nombre;
-  function getNombre() {
+
+  function getNombre()
+  {
     return $this->nombre;
   }
 }

@@ -1,65 +1,81 @@
 <?php
-class Libro {
 
-    public function __construct(private string $autor, private string $titulo) {}
+class Libro
+{
+  public function __construct(private string $autor, private string $titulo)
+  {
+  }
 
-    public function getAutor() {
-        return $this->autor;
-    }
+  public function getAutor()
+  {
+    return $this->autor;
+  }
 
-    public function getTitulo() {
-        return $this->titulo;
-    }
+  public function getTitulo()
+  {
+    return $this->titulo;
+  }
 }
 
-class LibroDecorator {
+class LibroDecorator
+{
+  private string $titulo;
+  private string $autor;
 
-    private string $titulo;
-    private string $autor;
-    
-    public function __construct(private Libro $libro) {
-        
-    }
+  public function __construct(private Libro $libro)
+  {
+  }
 
-    public function getAutor() {
-        return $this->libro->getAutor();
-    }
+  public function getAutor()
+  {
+    return $this->libro->getAutor();
+  }
 
-    public function getTitulo() {
-        return $this->libro->getTitulo();
-    }
+  public function getTitulo()
+  {
+    return $this->libro->getTitulo();
+  }
 
-    public function __toString() {
-        return $this->getTitulo() . " || " . $this->getAutor();
-    }
-    
+  public function __toString()
+  {
+    return $this->getTitulo() . " || " . $this->getAutor();
+  }
 }
 
-class LibroDecoratorExclamacion extends LibroDecorator {
+class LibroDecoratorExclamacion extends LibroDecorator
+{
+  public function __construct(private LibroDecorator $librodecorado)
+  {
+  }
 
-    public function __construct(private LibroDecorator $librodecorado) {}
-
-    public function __toString() {
-        return "¡" . $this->librodecorado . "!";
-    }
+  public function __toString()
+  {
+    return "¡" . $this->librodecorado . "!";
+  }
 }
 
-class LibroDecoratorEstrella extends LibroDecorator {
+class LibroDecoratorEstrella extends LibroDecorator
+{
+  public function __construct(private LibroDecorator $librodecorado)
+  {
+  }
 
-    public function __construct(private LibroDecorator $librodecorado) {}
-
-    public function __toString() {
-        return "****" . $this->librodecorado . "****";
-    }
+  public function __toString()
+  {
+    return "****" . $this->librodecorado . "****";
+  }
 }
 
-class LibroDecoratorAlReves extends LibroDecorator {
+class LibroDecoratorAlReves extends LibroDecorator
+{
+  public function __construct(private LibroDecorator $librodecorado)
+  {
+  }
 
-    public function __construct(private LibroDecorator $librodecorado) {}
-
-    public function __toString() {
-        return strrev($this->librodecorado);
-    }
+  public function __toString()
+  {
+    return strrev($this->librodecorado);
+  }
 }
 
 $libroTolkien = new Libro("El Hobbit", "J.R.R. Tolkien");

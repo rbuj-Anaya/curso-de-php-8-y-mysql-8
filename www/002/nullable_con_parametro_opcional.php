@@ -1,5 +1,6 @@
 <?php
-function adios(?string $nombre = null) {
+function adios(?string $nombre = null)
+{
   if (is_null($nombre)) {
     echo "¡Adiós!";
   } else {
@@ -8,4 +9,4 @@ function adios(?string $nombre = null) {
 }
 adios(); // correcto
 adios(null); // correcto
-adios(‘Jose’); // correcto
+adios('Jose'); // correcto

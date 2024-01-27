@@ -1,6 +1,6 @@
 ## MySQL 8
 ## Imagen base
-FROM mysql
+FROM mysql:8
  
 ## Variables de entorno. Configuración inicial de MySQL 8
 ENV MYSQL_ROOT_PASSWORD=anaya

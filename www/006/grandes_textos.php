@@ -1,4 +1,4 @@
-<h1>Gustavo Adolfo Bécquer</h1> 
+<h1>Gustavo Adolfo Bécquer</h1>
 <?php
 $poesia = <<<POEMA
 Los $autor invisibles átomos del aire<br/>

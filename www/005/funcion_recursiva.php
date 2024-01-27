@@ -1,9 +1,10 @@
 <?php
-function factorial($numero) {
+function factorial($numero)
+{
   if ($numero == 1) {
-      return $numero;
+    return $numero;
   } else {
-      return $numero * factorial($numero - 1);
+    return $numero * factorial($numero - 1);
   }
 }
 echo "El factorial de 3 es " . factorial(3) . "<br/>";

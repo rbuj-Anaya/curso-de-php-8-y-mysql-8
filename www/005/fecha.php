@@ -1,1 +1,1 @@
-<?= "Hoy es " . date( "d-m-Y" );
+<?= "Hoy es " . date("d-m-Y");

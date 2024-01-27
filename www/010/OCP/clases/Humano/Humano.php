@@ -1,6 +1,7 @@
 <?php
+
 namespace clases\Humano;
 
-interface Humano {
-
+interface Humano
+{
 }

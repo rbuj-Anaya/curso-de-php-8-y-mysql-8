@@ -9,5 +9,4 @@ do {
   $serie = $numero_anterior + $numero_posterior;
   $numero_anterior = $numero_posterior;
   $numero_posterior = $serie;
-}
-while ( $serie < $fin );
+} while ($serie < $fin);

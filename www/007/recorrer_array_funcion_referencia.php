@@ -4,14 +4,15 @@ $ciudades["España"] = "Madrid";
 $ciudades["Portugal"] = "Lisboa";
 $ciudades["Francia"] = "Paris";
 
-function recorre(&$ciudades) {
-    if(!current($ciudades)) {
-        reset($ciudades);
-    }
-    do {
-        $ciudad_actual = current($ciudades);
-        echo "El valor es: $ciudad_actual <br/>";
-    } while (next($ciudades));
+function recorre(&$ciudades)
+{
+  if (!current($ciudades)) {
+    reset($ciudades);
+  }
+  do {
+    $ciudad_actual = current($ciudades);
+    echo "El valor es: $ciudad_actual <br/>";
+  } while (next($ciudades));
 }
 
 recorre($ciudades);

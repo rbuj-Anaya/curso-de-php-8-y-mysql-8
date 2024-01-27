@@ -1,5 +1,5 @@
 <?php
-//Asignación de números y caracteres
+// Asignación de números y caracteres
 $numero_entero = 10;
 $NUMERO_entero = 20;
 $numero_flotante = 12343.123;
@@ -9,5 +9,5 @@ echo "numero_entero es $numero_entero <br/>";
 echo "NUMERO_entero es $NUMERO_entero <br/>";
 
 // Asignación de tipos especiales
-$verdadero = TRUE;
-$vacio = NULL;
+$verdadero = true;
+$vacio = null;

@@ -7,11 +7,11 @@ use clases\Humano\Persona\PersonaEspaña\LibroFamilia;
 
 spl_autoload_register(function ($clase) {
 
-    $directorio_clase = str_replace('\\', '/', $clase);
-        if (file_exists($directorio_clase . '.php')) {
-          require $directorio_clase . '.php';
-        }
-    });
+  $directorio_clase = str_replace('\\', '/', $clase);
+  if (file_exists($directorio_clase . '.php')) {
+    require $directorio_clase . '.php';
+  }
+});
 
 define('NOMBRE_PERSONA', 'Luis Alberto');
 define('PRIMER_APELLIDO_PERSONA', 'Pérez');
@@ -36,6 +36,6 @@ echo "<pre>";
 var_dump($persona->getDocumentos());
 echo "</pre>";
 
-foreach($persona->getDocumentos() as $documento) {
+foreach ($persona->getDocumentos() as $documento) {
   echo $documento->getNombreDocumento() . "<br/>";
 }

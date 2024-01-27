@@ -1,7 +1,7 @@
 <?php
-if ( isset( $usuario ) ) { 
+if (isset($usuario)) {
   $nombreUsuario = $usuario;
-}else{
+} else {
   $nombreUsuario = "anónimo";
 }
 echo $nombreUsuario;

@@ -1,29 +1,44 @@
 <?php
-class Persona {
+class Persona
+{
   public $nombre;
   public $apellidos;
   public $dni;
-  function __construct($nombre, $apellidos, $dni) {
+
+  function __construct($nombre, $apellidos, $dni)
+  {
     $this->nombre = $nombre;
     $this->apellidos = $apellidos;
     $this->dni = $dni;
   }
-  function setNombre($nombre) {
+
+  function setNombre($nombre)
+  {
     $this->nombre = $nombre;
   }
-  function getNombre() {
+
+  function getNombre()
+  {
     return $this->nombre;
   }
- function setApellidos($apellidos) {
+
+  function setApellidos($apellidos)
+  {
     $this->apellidos = $apellidos;
   }
-  function getApellidos() {
+
+  function getApellidos()
+  {
     return $this->apellidos;
   }
-  function setDni($dni) {
+
+  function setDni($dni)
+  {
     $this->dni = $dni;
   }
-  function getDni() {
+
+  function getDni()
+  {
     return $this->dni;
   }
 }

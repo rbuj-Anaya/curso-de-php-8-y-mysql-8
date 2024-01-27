@@ -1,11 +1,12 @@
 <?php
-function elevado_a(&$numero, &$indice) {
-    $resultado = $numero;
-    for($x = $indice; $x > 1; $x--) {
-        $resultado = $resultado * $numero;
-    }
-    $numero = $resultado;
-    return $numero;
+function elevado_a(&$numero, &$indice)
+{
+  $resultado = $numero;
+  for ($x = $indice; $x > 1; $x--) {
+    $resultado = $resultado * $numero;
+  }
+  $numero = $resultado;
+  return $numero;
 }
 
 $numero = 2;

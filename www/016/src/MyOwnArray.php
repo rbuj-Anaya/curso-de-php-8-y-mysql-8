@@ -1,18 +1,23 @@
 <?php
+
 namespace Application;
 
-class MyOwnArray {
+class MyOwnArray
+{
   private $myArray;
 
-  function __construct() {
+  function __construct()
+  {
     $this->myArray = [];
   }
 
-  public function addElementToMyArray($element) {
+  public function addElementToMyArray($element)
+  {
     $this->myArray[] = $element;
   }
 
-  public function getMyArray() {
+  public function getMyArray()
+  {
     return $this->myArray;
   }
 }
