@@ -1,6 +1,6 @@
 # Curso de PHP 8 y MySQL 8
 <p align="center">
-<img src="images/libro.png" alt="Curso de PHP 8 y MySQL 8" width="500px">
+<img src="images/libro.avif" alt="Curso de PHP 8 y MySQL 8" width="500px">
 </p>
 
 ## Introducción
@@ -27,7 +27,7 @@ Cada línea indica que es un contenedor distinto:
 Si el estado (_State_) del contenedor es _UP_ quiere decir que todo está funcionando. El servidor web Nginx se levanta en el puerto 8000 y debería responder desde cualquier navegador con la URL [http://localhost:8000](http://localhost:8000 "http://localhost:8000"). 
 Además, es posible comprobar que PHP 8 está funcionando accediendo a la URL [http://localhost:8000/info.php](http://localhost:8000/info.php "http://localhost:8000/info.php").
 <p align="center">
-<img src="images/info.png" alt="Captura de pantalla de phpinfo()"/>
+<img src="images/info.avif" width="700px" alt="Captura de pantalla de phpinfo()"/>
 </p>
 
 ## Conexión con los contenedores
