@@ -1,8 +1,8 @@
 {
     "recommendations": [
         "bmewburn.vscode-intelephense-client",
-        "felixfbecker.php-debug",
         "ms-azuretools.vscode-docker",
+        "streetsidesoftware.code-spell-checker",
         "streetsidesoftware.code-spell-checker-spanish",
         "xdebug.php-debug"
     ]
